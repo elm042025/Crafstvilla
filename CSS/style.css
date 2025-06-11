@@ -1,0 +1,14 @@
+/* 
+? Headings font -  font-family: "Taviraj", serif; 
+? body font - font-family: "Figtree", sans-serif; 
+* Dark blue: #073B4C
+* light blue: #118AB2
+* light green: #06d6a0
+* Yellow-ish: #FFD166
+* notWhite bg: #F8F4F0
+* notBlack bg: #181818
+*/
+h1 {
+   font-family: "Taviraj", serif;
+   color: #181818;
+}
