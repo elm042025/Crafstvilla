@@ -29,7 +29,7 @@ body {
 
 /*! --- Header --- */
 header {
-   width: 100%;
+   width: 100vw;
    height: 6rem;
    background-color: #ddf093;
    padding: 0 2rem;
