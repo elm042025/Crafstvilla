@@ -21,7 +21,7 @@
 
 body {
    font-family: "Figtree", sans-serif;
-   font-size: 1rem;
+   font-size: medium;
    background-color: #dfdfdf;
    color: #181818;
    line-height: 1;
@@ -29,8 +29,8 @@ body {
 
 /*! --- Header --- */
 header {
-   width: 100vw;
-   height: 6rem;
+   width: 100%;
+   height: fit-content;
    background-color: #ddf093;
    padding: 0 2rem;
    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -44,6 +44,9 @@ header,
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+}
+#nav-links {
+   flex-wrap: wrap;
 }
 /*! --- left side of the header (logo + h1 + h2) ---  */
 #logo {
@@ -68,10 +71,10 @@ header,
    font-weight: 300;
 }
 #logo-text h1 {
-   font-size: 2rem;
+   font-size: xx-large;
 }
 #logo-text h2 {
-   font-size: 1.5rem;
+   font-size: x-large;
 }
 /*! --- Right side of the header (nav + dark mode button) ---  */
 nav ul {
@@ -86,7 +89,7 @@ nav ul li {
 }
 nav ul li a {
    color: #181818;
-   font-size: 1.5rem;
+   font-size: x-large;
    gap: 0.5rem;
    text-decoration: none;
 }
@@ -102,12 +105,13 @@ nav ul li:hover {
    background-color: #06d6a0;
 }
 .separator {
-   font-size: 2rem;
-   color: 181818;
+   font-size: xx-large;
+   color: #181818;
    padding: 0 2rem 0 1rem;
 }
 /*! Pill-shaped button */
 #theme-toggle {
+   resize: none;
    scale: 1.5;
    width: 4rem;
    height: 2rem;

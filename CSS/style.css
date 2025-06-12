@@ -21,7 +21,7 @@
 
 body {
    font-family: "Figtree", sans-serif;
-   font-size: 1rem;
+   font-size: medium;
    background-color: #dfdfdf;
    color: #181818;
    line-height: 1;
@@ -30,7 +30,7 @@ body {
 /*! --- Header --- */
 header {
    width: 100%;
-   height: 6rem;
+   height: fit-content;
    background-color: #ddf093;
    padding: 0 2rem;
    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -45,6 +45,9 @@ header,
    justify-content: space-between;
    align-items: center;
 }
+#nav-links {
+   flex-wrap: wrap;
+}
 /*! --- left side of the header (logo + h1 + h2) ---  */
 #logo {
    height: 6rem;
@@ -56,22 +59,23 @@ header,
    height: 4rem;
 }
 #logo-text {
-   font-family: "Taviraj", serif;
    height: 4rem;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
-#logo-text h1,
-#logo-text h2 {
+h1,
+h2,
+h3 {
+   font-family: "Taviraj", serif;
    color: #181818;
    font-weight: 300;
 }
 #logo-text h1 {
-   font-size: 2rem;
+   font-size: xx-large;
 }
 #logo-text h2 {
-   font-size: 1.5rem;
+   font-size: x-large;
 }
 /*! --- Right side of the header (nav + dark mode button) ---  */
 nav ul {
@@ -86,7 +90,7 @@ nav ul li {
 }
 nav ul li a {
    color: #181818;
-   font-size: 1.5rem;
+   font-size: x-large;
    gap: 0.5rem;
    text-decoration: none;
 }
@@ -102,9 +106,99 @@ nav ul li:hover {
    background-color: #06d6a0;
 }
 .separator {
-   font-size: 2rem;
-   color: 181818;
+   font-size: xx-large;
+   color: #181818;
    padding: 0 2rem 0 1rem;
+}
+
+/*! --- Main - section - hero images ---  */
+.hero-images {
+   border: solid;
+   width: 70%;
+   height: 40%;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+   gap: 4.5rem;
+   margin: 2rem auto;
+}
+.hero-images img {
+   border-radius: 1.25rem;
+   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.vertical-hero-img {
+   width: 25%;
+   height: auto;
+}
+
+.horizontal-hero-img {
+   width: 50%;
+   height: auto;
+}
+
+/*! --- Main - section - content ---  */
+h3 {
+   margin-top: 1.5rem;
+   font-size: xxx-large;
+   text-align: center;
+}
+
+.kits-section {
+   border: solid 1px #181818;
+   width: 70%;
+   margin: 2rem auto;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.kit-card {
+   width: 30%;
+   height: 100%;
+   font-size: xx-large;
+   background-color: #ffffff;
+   border-radius: 1.25rem;
+   padding: 1rem 2rem;
+   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* justify-content: space-between; */
+   gap: 2rem;
+}
+.kit-card img {
+   width: 5rem;
+   height: auto;
+}
+h4 {
+   color: #181818;
+   font-weight: 400;
+}
+.kit-card span {
+   color: #118ab2;
+}
+.kit-card p {
+   font-size: xx-large;
+   color: #181818;
+   align-self: flex-start;
+   line-height: 1.5;
+}
+h5 {
+   color: #118ab2;
+   font-size: xx-large;
+   font-weight: 400;
+   align-self: flex-start;
+}
+.kit-card button {
+   padding: 1rem 4rem;
+   border-radius: 2rem;
+   background-color: #118ab2;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+   font-size: xx-large;
+   transition: 0.3s ease;
 }
 /*! Pill-shaped button */
 #theme-toggle {
