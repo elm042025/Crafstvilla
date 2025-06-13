@@ -51,7 +51,7 @@
                      <a href="./index.html"
                         ><img
                            src="./icons/home.png"
-                           alt=""
+                           alt="hand drawn house"
                         />Home</a
                      >
                   </li>
@@ -59,7 +59,7 @@
                      <a href="./booking.html"
                         ><img
                            src="./icons/booking.png"
-                           alt=""
+                           alt="hand drawn calendar"
                         />Booking</a
                      >
                   </li>
@@ -67,7 +67,7 @@
                      <a href="./gallery.html"
                         ><img
                            src="./icons/gallery.png"
-                           alt=""
+                           alt="hand drawn photo templates"
                         />Gallery</a
                      >
                   </li>
@@ -75,7 +75,7 @@
                      <a href="./feedback.html">
                         <img
                            src="./icons/feedback.png"
-                           alt=""
+                           alt="hand drawn person speaking"
                         />Feedback</a
                      >
                   </li>
@@ -88,50 +88,98 @@
             >
                <div class="slider">
                   <!-- Moon icon -->
-                  <svg
-                     class="icon moon-icon"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="#fff"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                  >
-                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-                  </svg>
+                  <img
+                     class="moon-icon"
+                     src="./icons/moon.png"
+                     alt="moon icon"
+                  />
 
                   <!-- Sun icon -->
-                  <svg
-                     class="icon sun-icon"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="#000"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                  >
-                     <circle
-                        cx="12"
-                        cy="12"
-                        r="4"
-                     />
-                     <path d="M12 2v2" />
-                     <path d="M12 20v2" />
-                     <path d="m4.93 4.93 1.41 1.41" />
-                     <path d="m17.66 17.66 1.41 1.41" />
-                     <path d="M2 12h2" />
-                     <path d="M20 12h2" />
-                     <path d="m6.34 17.66-1.41 1.41" />
-                     <path d="m19.07 4.93-1.41 1.41" />
-                  </svg>
+                  <img
+                     class="sun-icon"
+                     src="./icons/sun.png"
+                     alt="sun icon"
+                  />
                </div>
             </button>
          </section>
       </header>
+      <main>
+         <h3>Book Your Creative Experience</h3>
+         <p>Choose your preferred date and time for the workshop.</p>
+         <fieldset>
+            <legend>Workshop Booking Details</legend>
+            <p>
+               Please fill out the form below to book your spot in our upcoming
+               workshop.
+            </p>
+            <form id="booking-form">
+               <label for="name">Full name:</label>
+               <input
+                  placeholder="Example: Tony Stark"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+               />
 
-      <main></main>
+               <label for="email">Email:</label>
+               <input
+                  placeholder="Example: tony.stark@starkindustries.com"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+               />
+
+               <label for="date">Preferred Date:</label>
+               <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+               />
+
+               <label for="time">Preferred Time:</label>
+               <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  required
+               />
+               <label for="participants">Number of Participants:</label>
+               <input
+                  type="number"
+                  id="participants"
+                  name="participants"
+                  min="1"
+                  max="10"
+                  required
+               />
+               <label for="artwork-type">Type of Artwork:</label>
+               <select
+                  id="artwork-type"
+                  name="artwork-type"
+                  required
+               >
+                  <option value="">Select Artwork Type</option>
+                  <option value="mosaic">Mosaic</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="acrylic-paint">Acrylic Paint</option>
+               </select>
+               <label for="special-requests">Special Requests:</label>
+               <textarea
+                  id="special-requests"
+                  name="special-requests"
+                  placeholder="Any specific requests or requirements? for example, 2 x mosaic art kits, 1 x watercolor painting kit, etc."
+               ></textarea>
+
+               <p>Total Cost: <span id="total-cost">0</span> NOK</p>
+
+               <button type="submit">Book Now</button>
+            </form>
+         </fieldset>
+      </main>
 
       <footer>
          <p>© Mosaic Art Studio Norway 2025 | All rights reserved. (fake)</p>
