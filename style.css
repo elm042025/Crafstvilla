@@ -89,7 +89,6 @@ header,
    justify-content: space-between;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -102,7 +101,7 @@ h6 {
    font-size: 1.125rem;
    font-weight: 500;
 }
-#logo-text h2 {
+#logo-text p {
    font-size: 1rem;
    font-weight: 400;
 }
@@ -238,7 +237,7 @@ body.dark .moon-icon {
    align-items: flex-start;
    justify-content: space-between;
    gap: 1rem;
-   margin: 1rem auto 0 auto;
+   margin: 1rem auto 1rem auto;
 }
 .hero-images img {
    border-radius: 1.25rem;
@@ -248,10 +247,34 @@ body.dark .moon-icon {
 .vertical-hero-img {
    width: 25%;
    height: auto;
+   align-self: flex-end;
+}
+
+#hero-text-and-img {
+   flex: 1;
+   width: 50%;
+   max-height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+}
+#hero-text-and-img h2 {
+   font-family: "Taviraj", serif;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: #168eab;
+   margin-bottom: 0.75rem;
+}
+#hero-text-and-img p {
+   font-size: 1rem;
+   color: #181818;
+   margin-bottom: 0.75rem;
 }
 
 .horizontal-hero-img {
-   width: 45%;
+   width: 95%;
    height: auto;
 }
 
