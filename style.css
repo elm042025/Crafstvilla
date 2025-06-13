@@ -131,12 +131,12 @@ nav ul li a:hover {
    height: 2rem;
    background-color: #ffffff;
    border: none;
-   border-radius: 62.5rem;
+   border-radius: 62rem;
    cursor: pointer;
    padding: 0.125rem 0;
    display: flex;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: space-between;
    transition: background-color 0.3s ease;
    overflow: hidden;
    position: relative;
@@ -161,7 +161,7 @@ body.dark #theme-toggle {
    transform: translateX(0);
 }
 #theme-toggle:hover {
-   border: solid 0.063rem rgba(228, 137, 0, 0.511);
+   border: solid 0.063rem rgba(244, 16, 46, 0.654);
 }
 
 body.dark .slider {
