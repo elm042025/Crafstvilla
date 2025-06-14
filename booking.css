@@ -33,6 +33,13 @@ body {
    width: 100%;
 }
 
+/*! ----- body dark theme -----  */
+body.dark {
+   background-color: #181818;
+   color: #fefae0;
+}
+/*! ----------------------------  */
+
 /*! --- Header --- */
 header {
    width: 100%;
@@ -263,6 +270,13 @@ fieldset {
    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
    margin-bottom: 1rem;
 }
+
+/*! fieldset dark theme */
+body.dark fieldset {
+   background-color: #000000;
+   color: #fefae0;
+   border: 1px solid #2a9d8f;
+}
 legend {
    padding: 0 0.5rem;
    font-family: "Taviraj", serif;
@@ -362,31 +376,41 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+   .desktop {
+      display: none;
+   }
+   .mobile {
+      display: block;
+   }
+   .mobile {
+      width: 90%;
+      margin: 1rem auto;
+   }
+
+   /*! ---- header for mobile ----  */
    header {
       height: auto;
       flex-direction: column;
       align-items: center;
       gap: 0.5rem;
    }
+   #logo-text {
+      justify-content: space-around;
+   }
+
    #logo img {
       height: 3rem;
    }
-   #logo-text h1 {
-      font-size: 1rem;
-   }
-   #logo-text p {
-      font-size: 0.875rem;
-   }
    nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
+      gap: 0.25rem;
    }
    nav ul li a {
-      padding: 0.5rem 1rem;
-      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
    }
-   main {
-      padding: 1rem;
+
+   /*! ---- main for mobile ----  */
+   main h3 {
+      font-size: 1.5rem;
    }
 }

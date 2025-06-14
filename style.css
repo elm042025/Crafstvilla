@@ -33,6 +33,13 @@ body {
    width: 100vw;
 }
 
+/*! ----- body dark theme -----  */
+body.dark {
+   background-color: #181818;
+   color: #fefae0;
+}
+/*! ----------------------------  */
+
 /*! --- Header --- */
 header {
    width: 100%;
@@ -276,6 +283,11 @@ body.dark .moon-icon {
    margin-bottom: 0.75rem;
 }
 
+/*! ----- .mobile p dark theme -------  */
+body.dark .mobile p {
+   color: #fefae0;
+}
+
 .horizontal-hero-img {
    width: 95%;
    height: auto;
@@ -317,6 +329,14 @@ h3 {
    transition: all 0.3s ease;
 }
 
+/*! ----- .kit-card dark theme -------  */
+body.dark .kit-card {
+   background-color: #1e1e1e;
+   color: #fefae0;
+   box-shadow: 0.125rem 0.125rem 0.25rem rgba(60, 225, 206, 0.376);
+}
+/*! ------------------------------------------  */
+
 .kit-card:hover {
    transform: translateY(-8px) scale(1.02);
    box-shadow: 0 12px 24px rgba(60, 225, 206, 0.376);
@@ -338,6 +358,11 @@ h4 {
    color: #181818;
    align-self: flex-start;
 }
+/*! ----- .kit-card p dark theme -------  */
+body.dark .kit-card p {
+   color: #fefae0;
+}
+
 h5 {
    color: #168eab;
    font-size: 1rem;
@@ -423,23 +448,42 @@ footer {
    display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
    .desktop {
       display: none;
    }
    .mobile {
       display: block;
    }
+   .mobile {
+      width: 90%;
+      margin: 1rem auto;
+   }
+
+   /*! ---- header for mobile ----  */
    header {
       height: auto;
       flex-direction: column;
       align-items: center;
       gap: 0.5rem;
    }
-   .mobile {
-      width: 90%;
-      margin: 1rem auto;
+   #logo-text {
+      justify-content: space-around;
    }
+
+   #logo img {
+      height: 3rem;
+   }
+   nav ul {
+      gap: 0.25rem;
+   }
+   nav ul li a {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+   }
+
+   /*! ---- main for mobile ----  */
+
    .mobile,
    .mobile h2,
    .mobile p {
@@ -452,25 +496,6 @@ footer {
    .mobile p {
       line-height: 1.25rem;
       font-size: 1rem;
-   }
-
-   #logo img {
-      height: 3rem;
-   }
-   /* #logo-text h1 {
-      font-size: 1rem;
-   }
-   #logo-text p {
-      font-size: 0.875rem;
-   } */
-   nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-   }
-   nav ul li a {
-      padding: 0.5rem 1rem;
-      font-size: 0.875rem;
    }
 
    .hero-images {
