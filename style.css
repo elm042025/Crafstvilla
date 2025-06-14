@@ -284,7 +284,8 @@ body.dark .moon-icon {
 }
 
 /*! ----- .mobile p dark theme -------  */
-body.dark .mobile p {
+body.dark .mobile p,
+#hero-text-and-img p {
    color: #fefae0;
 }
 
