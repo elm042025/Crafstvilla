@@ -29,14 +29,14 @@ body {
    background-color: #fefae0; /*? #dfdfdf */
    color: #181818;
    line-height: 1;
-   height: 100vh;
-   width: 100vw;
+   height: 100%;
+   width: 100%;
 }
 
 /*! --- Header --- */
 header {
    width: 100%;
-   min-height: 3.25rem;
+   height: 3.25rem;
    background-color: #dda15e;
    padding: 0.5rem 1rem;
    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
@@ -54,7 +54,7 @@ header,
    justify-content: space-between;
    align-items: center;
 }
-/*! --- left side of the header (logo + h1 + h2) ---  */
+/*! --- left side of the header (logo + h1 + p) ---  */
 #logo {
    height: 100%;
    gap: 0.5rem;
@@ -230,6 +230,114 @@ body.dark .moon-icon {
    opacity: 0;
 }
 
+/*! --- Main styling starts here  ---   */
+
+main {
+   flex: 1;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.5rem;
+}
+main h2 {
+   font-family: "Taviraj", serif;
+   color: #2a9d8f;
+   font-size: 2rem;
+   font-weight: 500;
+   text-align: center;
+}
+main p {
+   font-size: 1.125rem;
+   margin-bottom: 1rem;
+   text-align: center;
+}
+fieldset {
+   width: 100%;
+   max-width: 37.5rem;
+   background-color: #ffffff;
+   padding: 1.5rem;
+   border-radius: 1.25rem;
+   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+   margin-bottom: 1rem;
+}
+legend {
+   padding: 0 0.5rem;
+   font-family: "Taviraj", serif;
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: #2a9d8f;
+   margin-bottom: 0.5rem;
+}
+#feedback-form {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   font-family: "Figtree", sans-serif;
+}
+#feedback-form label {
+   color: #2a9d8f;
+   display: block;
+   font-weight: 500;
+}
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+   font-family: "Figtree", sans-serif;
+   width: 100%;
+   padding: 0.5rem;
+   margin-bottom: 0.25rem;
+   border: 1px solid #ccc;
+   border-radius: 0.25rem;
+   font-size: 1rem;
+   transition: all 0.3s ease;
+}
+#feedback-form input:focus,
+#feedback-form select:focus,
+#feedback-form textarea:focus {
+   outline: none;
+   border-color: #2a9d8f;
+   box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+   transform: translateY(-1px);
+}
+#feedback-form select option {
+   background-color: #ffffff; /*? #dfdfdf */
+   color: #181818;
+}
+#feedback-form select {
+   cursor: pointer;
+   background-color: #ffffff; /*? #dfdfdf */
+   color: #181818;
+}
+
+#feedback-form textarea {
+   resize: vertical;
+   min-height: 7rem;
+}
+#feedback-form button[type="submit"] {
+   background-color: #2a9d8f;
+   color: #ffffff;
+   padding: 0.75rem 1.5rem;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(42, 157, 143, 0.2);
+}
+#feedback-form button[type="submit"]:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 25px rgba(42, 157, 143, 0.3);
+}
+
+#feedback-form button[type="submit"]:active {
+   transform: translateY(0);
+   box-shadow: 0 4px 15px rgba(42, 157, 143, 0.2);
+}
 footer {
    width: 100%;
    height: fit-content;
@@ -251,4 +359,34 @@ footer {
 }
 #footer-links img {
    height: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+   header {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+   }
+   #logo img {
+      height: 3rem;
+   }
+   #logo-text h1 {
+      font-size: 1rem;
+   }
+   #logo-text p {
+      font-size: 0.875rem;
+   }
+   nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+   }
+   nav ul li a {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+   }
+   main {
+      padding: 1rem;
+   }
 }

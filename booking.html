@@ -149,6 +149,7 @@
                />
                <label for="participants">Number of Participants:</label>
                <input
+                  placeholder="Enter number of participants (1-10)"
                   type="number"
                   id="participants"
                   name="participants"
@@ -156,22 +157,53 @@
                   max="10"
                   required
                />
-               <label for="artwork-type">Type of Artwork:</label>
+               <label for="mosaic-artwork-type">Mosaic kit quantity:</label>
                <select
-                  id="artwork-type"
+                  id="mosaic-artwork-type"
                   name="artwork-type"
                   required
                >
-                  <option value="">Select Artwork Type</option>
-                  <option value="mosaic">Mosaic</option>
-                  <option value="watercolor">Watercolor</option>
-                  <option value="acrylic-paint">Acrylic Paint</option>
+                  <option value="">Select number of Kits</option>
+                  <option value="mosaicKit*1">1 Kit</option>
+                  <option value="mosaicKit*2">2 Kits</option>
+                  <option value="mosaicKit*3">3 Kits</option>
+                  <option value="mosaicKit*4">4 Kits</option>
+                  <option value="mosaicKit*5">5 Kits</option>
                </select>
+               <label for="watercolor-artwork-type"
+                  >Watercolor kit quantity:</label
+               >
+               <select
+                  id="watercolor-artwork-type"
+                  name="artwork-type"
+                  required
+               >
+                  <option value="">Select number of Kits</option>
+                  <option value="waterColorKit*1">1 Kit</option>
+                  <option value="waterColorKit*2">2 Kits</option>
+                  <option value="waterColorKit*3">3 Kits</option>
+                  <option value="waterColorKit*4">4 Kits</option>
+                  <option value="waterColorKit*5">5 Kits</option>
+               </select>
+               <label for="acrylic-artwork-type">Acrylic kit quantity:</label>
+               <select
+                  id="acrylic-artwork-type"
+                  name="artwork-type"
+                  required
+               >
+                  <option value="">Select number of Kits</option>
+                  <option value="acrylicKit*1">1 Kit</option>
+                  <option value="acrylicKit*2">2 Kits</option>
+                  <option value="acrylicKit*3">3 Kits</option>
+                  <option value="acrylicKit*4">4 Kits</option>
+                  <option value="acrylicKit*5">5 Kits</option>
+               </select>
+
                <label for="special-requests">Special Requests:</label>
                <textarea
                   id="special-requests"
                   name="special-requests"
-                  placeholder="Any specific requests or requirements? for example, 2 x mosaic art kits, 1 x watercolor painting kit, etc."
+                  placeholder="Let us know if you have any specific requests or requirements."
                ></textarea>
 
                <p>Total Cost: <span id="total-cost">0</span> NOK</p>

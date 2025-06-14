@@ -47,11 +47,11 @@
          <section id="navbarAndtheme-toggle">
             <nav id="navbar">
                <ul id="nav-links">
-                  <li class="active">
+                  <li>
                      <a href="./index.html"
                         ><img
                            src="./icons/home.png"
-                           alt="hand drawn house"
+                           alt=""
                         />Home</a
                      >
                   </li>
@@ -59,7 +59,7 @@
                      <a href="./booking.html"
                         ><img
                            src="./icons/booking.png"
-                           alt="hand drawn calendar"
+                           alt=""
                         />Booking</a
                      >
                   </li>
@@ -67,15 +67,15 @@
                      <a href="./gallery.html"
                         ><img
                            src="./icons/gallery.png"
-                           alt="hand drawn photo templates"
+                           alt=""
                         />Gallery</a
                      >
                   </li>
-                  <li>
+                  <li class="active">
                      <a href="./feedback.html">
                         <img
                            src="./icons/feedback.png"
-                           alt="hand drawn person speaking"
+                           alt=""
                         />Feedback</a
                      >
                   </li>
@@ -88,24 +88,111 @@
             >
                <div class="slider">
                   <!-- Moon icon -->
-                  <img
-                     class="moon-icon"
-                     src="./icons/moon.png"
-                     alt="moon icon"
-                  />
+                  <svg
+                     class="icon moon-icon"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="#fff"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                  >
+                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                  </svg>
 
                   <!-- Sun icon -->
-                  <img
-                     class="sun-icon"
-                     src="./icons/sun.png"
-                     alt="sun icon"
-                  />
+                  <svg
+                     class="icon sun-icon"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="#000"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                  >
+                     <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                     />
+                     <path d="M12 2v2" />
+                     <path d="M12 20v2" />
+                     <path d="m4.93 4.93 1.41 1.41" />
+                     <path d="m17.66 17.66 1.41 1.41" />
+                     <path d="M2 12h2" />
+                     <path d="M20 12h2" />
+                     <path d="m6.34 17.66-1.41 1.41" />
+                     <path d="m19.07 4.93-1.41 1.41" />
+                  </svg>
                </div>
             </button>
          </section>
       </header>
 
-      <main></main>
+      <main>
+         <h2>We'd Love Your Feedback</h2>
+         <p>Tell us how your Craftvilla experience was!</p>
+         <fieldset>
+            <legend>Workshop Feedback</legend>
+            <p>
+               Please fill out the form below to provide your feedback on our
+               workshop.
+            </p>
+            <form id="feedback-form">
+               <label for="name">Full name:</label>
+               <input
+                  placeholder="Example: Tony Stark"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+               />
+               <label for="attended-with">Attended with:</label>
+               <input
+                  placeholder="Example: Mother, Father, Son, Daughter, Friend"
+                  type="text"
+                  id="attended-with"
+                  name="attended-with"
+               />
+               <label for="artwork-type">Type of artwork:</label>
+               <select
+                  id="artwork-type"
+                  name="artwork-type"
+                  required
+               >
+                  <option value="">Select an artwork type</option>
+                  <option value="painting">Painting</option>
+                  <option value="sculpture">Sculpture</option>
+                  <option value="digital">Digital Art</option>
+               </select>
+
+               <label for="feedback-text">Your feedback:</label>
+               <textarea
+                  id="feedback-text"
+                  name="feedback-text"
+                  placeholder="Let us know if you have any specific requests or requirements."
+               ></textarea>
+
+               <label for="rating">Rating:</label>
+               <select
+                  id="rating"
+                  name="rating"
+                  required
+               >
+                  <option value="">Select a rating</option>
+                  <option value="1star">1 - ⭐Poor</option>
+                  <option value="2star">2 - ⭐⭐Fair</option>
+                  <option value="3star">3 - ⭐⭐⭐Good</option>
+                  <option value="4star">4 - ⭐⭐⭐⭐Very Good</option>
+                  <option value="5star">5 - ⭐⭐⭐⭐⭐ Excellent</option>
+               </select>
+
+               <button type="submit">Submit Feedback</button>
+            </form>
+         </fieldset>
+      </main>
 
       <footer>
          <p>© Mosaic Art Studio Norway 2025 | All rights reserved. (fake)</p>
