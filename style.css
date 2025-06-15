@@ -1,7 +1,7 @@
 /* 
 ? Headings font -  font-family: "Taviraj", serif; 
 ? body font - font-family: "Figtree", sans-serif; 
-* Dark blue: #168EAB
+* Dark blue: #09131A -- Dark mode header and footer bg --
 * light blue: #118AB2
 * light green: #2a9d8f
 * yellow-ish: #FFD166
@@ -31,6 +31,7 @@ body {
    line-height: 1;
    height: 100vh;
    width: 100vw;
+   transition: 0.3s ease-in-out;
 }
 
 /*! ----- body dark theme -----  */
@@ -51,6 +52,12 @@ header {
    top: 0;
    z-index: 100;
 }
+
+/*! ----- Header dark theme -----  */
+body.dark header {
+   background-color: #09131a; /* Dark mode header bg */
+}
+/*! ----------------------------  */
 header,
 #logo,
 #nav-links,
@@ -104,6 +111,18 @@ h6 {
    color: #181818;
    font-weight: 300;
 }
+
+/*! ------ header dark theme colors ------  */
+body.dark h1,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+   font-family: "Taviraj", serif;
+   color: #fefae0; /* Dark mode header text color */
+   font-weight: 300;
+}
+/*! ---------------------------------------------  */
 #logo-text h1 {
    font-size: 1.125rem;
    font-weight: 500;
@@ -161,6 +180,12 @@ nav ul li.active a {
    padding: 0 0.5rem;
    opacity: 0.6;
 }
+/*! ----------- separator dark mode-----------  */
+body.dark .separator {
+   color: #ffffff;
+   opacity: 1;
+}
+/*! --------------------------------  */
 /*! Pill-shaped theme toggle button */
 #theme-toggle {
    width: 2.9rem;
@@ -183,7 +208,7 @@ body.dark #theme-toggle {
    background-color: #bbbbbb;
 }
 
-/*! Slider that moves left/right */
+/*! --------- Slider that moves left/right -------------- */
 .slider {
    background-color: #000000;
    border-radius: 50%;
@@ -334,7 +359,7 @@ h3 {
 body.dark .kit-card {
    background-color: #1e1e1e;
    color: #fefae0;
-   box-shadow: 0.125rem 0.125rem 0.25rem rgba(60, 225, 206, 0.376);
+   box-shadow: 0.25rem 0.25rem 0.25rem rgba(60, 225, 206, 0.376);
 }
 /*! ------------------------------------------  */
 
@@ -342,6 +367,14 @@ body.dark .kit-card {
    transform: translateY(-8px) scale(1.02);
    box-shadow: 0 12px 24px rgba(60, 225, 206, 0.376);
 }
+
+/*! ----- .kit-card img dark theme -------  */
+body.dark .kit-card:hover {
+   transform: translateY(-8px) scale(1.02);
+   box-shadow: 0 12px 24px rgba(60, 225, 206, 0.376);
+}
+/*! ------------------------------------------  */
+
 .kit-card img {
    width: 2rem;
    height: auto;
@@ -432,6 +465,12 @@ footer {
    justify-content: space-between;
    align-items: center;
 }
+
+/*! ---------- footer dark mode ------  */
+body.dark footer {
+   background-color: #09131a; /* Dark mode footer bg */
+}
+/*! --------------------------------  */
 #footer-links {
    font-size: 1.125rem;
    display: flex;
@@ -519,5 +558,19 @@ footer {
       width: 80%;
       padding: 1rem;
       text-align: center;
+   }
+
+   /*! -----------footer mobile mode-------------  */
+   footer {
+      flex-direction: column;
+      align-items: space-between;
+      gap: 1rem;
+      padding: 1rem;
+      text-align: center;
+   }
+   #footer-links {
+      font-size: 1rem;
+      align-items: center;
+      justify-content: center;
    }
 }
