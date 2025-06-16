@@ -9,8 +9,10 @@ let acrylicKitPrice = 300;
 //* -----------DOM-------------
 
 const errorChoice = document.getElementById("error-choice");
-let totalCost = document.getElementById("total-cost");
 
+let totalCost = document.getElementById("total-cost");
+const bookingForm = document.getElementById("booking-form");
+const bookNowBtn = document.getElementById("bookNow-btn");
 //! ------------------ totalCost function -------------------------//
 
 function calculateTotalCost() {
@@ -33,3 +35,15 @@ document.querySelectorAll("select").forEach((select) => {
    select.addEventListener("change", calculateTotalCost);
 });
 calculateTotalCost();
+
+//! ------------- just some confetti fun -----------//
+
+bookingForm.addEventListener("submit", function (event) {
+   event.preventDefault(); // Prevent form from refreshing the page
+
+   confetti(); // Trigger the fun 🎉
+
+   // Optional: reset the form or show a success message
+   bookingForm.reset();
+   totalCost.textContent = "0";
+});
