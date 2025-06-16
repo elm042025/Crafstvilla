@@ -104,7 +104,6 @@ header,
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -112,16 +111,21 @@ h6 {
    color: #181818;
    font-weight: 300;
 }
+h3 {
+   font-family: "Taviraj", serif;
+}
 
 /*! ------ header dark theme colors ------  */
 body.dark h1,
-body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6 {
    font-family: "Taviraj", serif;
    color: #fefae0; /* Dark mode header text color */
    font-weight: 300;
+}
+body.dark h3 {
+   color: #2a9d8f;
 }
 /*! ---------------------------------------------  */
 #logo-text h1 {

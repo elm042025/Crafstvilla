@@ -28,6 +28,10 @@
          src="./script.js"
          defer
       ></script>
+      <script
+         src="./booking.js"
+         defer
+      ></script>
    </head>
 
    <body>
@@ -109,10 +113,7 @@
          <p>Choose your preferred date and time for the workshop.</p>
          <fieldset>
             <legend>Workshop Booking Details</legend>
-            <p>
-               Please fill out the form below to book your spot in our upcoming
-               workshop.
-            </p>
+            <p>Please fill out the form below to book your spot in our upcoming workshop.</p>
             <form id="booking-form">
                <label for="name">Full name:</label>
                <input
@@ -170,9 +171,7 @@
                   <option value="4">4 Kits</option>
                   <option value="5">5 Kits</option>
                </select>
-               <label for="watercolor-artwork-type"
-                  >Watercolor kit quantity:</label
-               >
+               <label for="watercolor-artwork-type">Watercolor kit quantity:</label>
                <select
                   id="watercolor-artwork-type"
                   name="artwork-type"
@@ -207,7 +206,15 @@
                ></textarea>
                <p id="error-choice"></p>
 
-               <p>Total Cost: <span id="total-cost">0</span> NOK</p>
+               <p>
+                  Total Cost:
+                  <span
+                     id="total-cost"
+                     aria-live="polite"
+                     >0</span
+                  >
+                  NOK
+               </p>
 
                <button type="submit">Book Now</button>
             </form>

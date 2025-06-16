@@ -103,7 +103,6 @@ header,
    justify-content: space-between;
 }
 h1,
-h3,
 h4,
 h5,
 h6 {
@@ -111,16 +110,23 @@ h6 {
    color: #181818;
    font-weight: 300;
 }
+h3 {
+   font-family: "Taviraj", serif;
+   color: #168eab;
+   font-weight: 300;
+}
 
 /*! ------ header dark theme colors ------  */
 body.dark h1,
-body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6 {
    font-family: "Taviraj", serif;
    color: #fefae0; /* Dark mode header text color */
    font-weight: 300;
+}
+body.dark h3 {
+   color: #168eab;
 }
 /*! ---------------------------------------------  */
 #logo-text h1 {
@@ -359,7 +365,7 @@ h3 {
 body.dark .kit-card {
    background-color: #1e1e1e;
    color: #fefae0;
-   box-shadow: 0.25rem 0.25rem 0.25rem rgba(60, 225, 206, 0.376);
+   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 /*! ------------------------------------------  */
 

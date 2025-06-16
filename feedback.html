@@ -28,6 +28,14 @@
          src="./script.js"
          defer
       ></script>
+      <script
+         src="./feedback.js"
+         defer
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
+         defer
+      ></script>
    </head>
 
    <body>
@@ -185,8 +193,21 @@
                   <option value="4star">4 - ⭐⭐⭐⭐Very Good</option>
                   <option value="5star">5 - ⭐⭐⭐⭐⭐ Excellent</option>
                </select>
+               <br />
 
-               <button type="submit">Submit Feedback</button>
+               <p
+                  id="submittedEl"
+                  aria-live="polite"
+               ></p>
+
+               <br />
+
+               <button
+                  id="submit-btn"
+                  type="submit"
+               >
+                  Submit Feedback
+               </button>
             </form>
          </fieldset>
       </main>

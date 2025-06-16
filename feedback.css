@@ -358,6 +358,12 @@ legend {
    resize: vertical;
    min-height: 7rem;
 }
+
+#submittedEl {
+   color: #2a9d8f;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
 #feedback-form button[type="submit"] {
    background-color: #2a9d8f;
    color: #ffffff;
