@@ -387,6 +387,12 @@ h4 {
    color: #168eab;
    font-weight: 500;
 }
+/*! ----------.h4 dark theme-------  */
+body.dark h4,
+body.dark h5 {
+   color: #168eab;
+}
+/*!--------------------------------  */
 .kit-card p {
    font-size: 1rem;
    color: #181818;

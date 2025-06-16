@@ -402,6 +402,12 @@ footer {
    height: 1.25rem;
 }
 
+/*! ---------- footer dark mode ------  */
+body.dark footer {
+   background-color: #09131a; /* Dark mode footer bg */
+}
+/*! --------------------------------  */
+
 @media screen and (max-width: 768px) {
    .desktop {
       display: none;
