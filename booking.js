@@ -41,7 +41,7 @@ calculateTotalCost();
 bookingForm.addEventListener("submit", function (event) {
    event.preventDefault(); // Prevent form from refreshing the page
 
-   confetti(); // Trigger the fun 🎉
+   confetti({ particleCount: 300, spread: 160 }); // Trigger the fun 🎉
 
    // Optional: reset the form or show a success message
    bookingForm.reset();
