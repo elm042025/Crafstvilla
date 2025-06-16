@@ -307,7 +307,7 @@ body.dark .moon-icon {
    color: #168eab;
    margin-bottom: 0.75rem;
 }
-#hero-text-and-img p,
+.desktop p,
 .mobile p {
    font-size: 1rem;
    color: #181818;
@@ -316,7 +316,7 @@ body.dark .moon-icon {
 
 /*! ----- .mobile p dark theme -------  */
 body.dark .mobile p,
-#hero-text-and-img p {
+body.dark #hero-text-and-img p {
    color: #fefae0;
 }
 
