@@ -6,13 +6,14 @@ let mosaicKitPrice = 400;
 let waterColorKitPrice = 200;
 let acrylicKitPrice = 300;
 
-//* -----------DOM-------------
+//* -----------DOM-------------//
 
 const errorChoice = document.getElementById("error-choice");
 
 let totalCost = document.getElementById("total-cost");
 const bookingForm = document.getElementById("booking-form");
 const bookNowBtn = document.getElementById("bookNow-btn");
+
 //! ------------------ totalCost function -------------------------//
 
 function calculateTotalCost() {
