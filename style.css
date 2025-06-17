@@ -282,6 +282,9 @@ body.dark .moon-icon {
    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
    transition: all 0.3s ease;
 }
+body.dark .hero-images img {
+   box-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 255, 255, 0.25);
+}
 .vertical-hero-img {
    width: 23%;
    height: auto;
@@ -328,6 +331,9 @@ body.dark #hero-text-and-img p {
 .hero-images img:hover {
    transform: translateY(-5px) scale(1.02);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+body.dark .hero-images img:hover {
+   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 /*! --- Main - section - content ---  */
