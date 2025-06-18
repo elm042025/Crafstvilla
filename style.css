@@ -404,6 +404,7 @@ h4 {
 body.dark h4,
 body.dark h5 {
    color: #168eab;
+   font-weight: 500;
 }
 /*!--------------------------------  */
 .kit-card p {
