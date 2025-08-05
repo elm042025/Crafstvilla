@@ -12,3 +12,4 @@ toggle.addEventListener("click", () => {
    localStorage.setItem("theme", theme);
 });
 //!------------------------------------------------------------//
+console.log("hello world");
